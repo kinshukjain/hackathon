@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "start": "nodemon ./local.js",
+    "deploy": "serverless deploy"
   },
   "repository": {
     "type": "git",
@@ -18,10 +19,12 @@
   },
   "homepage": "https://github.com/kinshukjain/hackathon#readme",
   "dependencies": {
+    "aws-serverless-express": "^3.1.3",
     "body-parser": "^1.18.2",
     "express": "^4.16.2"
   },
   "devDependencies": {
-    "nodemon": "^1.15.1"
+    "nodemon": "^1.15.1",
+    "serverless": "^1.26.0"
   }
 }
