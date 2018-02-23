@@ -1,7 +1,8 @@
 // server.js: to run our app on aws lambda
-const express    = require('express');
+
+const express = require('express');
 const bodyParser = require('body-parser');
-const app        = express();
+const app = express();
 
 // setup express
 app.use(bodyParser.urlencoded({ extended: true }));

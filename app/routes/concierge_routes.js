@@ -1,13 +1,14 @@
-const conciergeData = require('../constants').conciergeData;
+const conciergeData = require('../utils').conciergeData;
+const chromeless = require('../utils').chromeless;
 
-module.exports = function(app) {
+module.exports = function (app) {
   // post call for concierge
-  app.post('/giveMeJPG', (req, res) => {
+  app.get('/giveMeJPG', (req, res) => {
     //  conciergeData.setData(req.body);
-    //  call chromeless
-    //  render dashboard
-    //  get snapshot
-    //  res.send(jpg file);
-    console.log(req.body);
+    //  render dashboard and get screenshot
+    chromeless.getScreenshot().then(screenshot => {
+      res.send(screenshot);
+    });
+    // console.log(req.body);
   });
 };
