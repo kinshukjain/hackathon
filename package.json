@@ -1,0 +1,19 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "backend for receiving requests from concierge, and returning jpg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinshukjain/hackathon.git"
+  },
+  "author": "kinshukjain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kinshukjain/hackathon/issues"
+  },
+  "homepage": "https://github.com/kinshukjain/hackathon#readme"
+}
